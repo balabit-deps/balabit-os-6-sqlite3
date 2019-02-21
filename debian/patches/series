@@ -5,3 +5,5 @@
 10-665363-disable-malloc-usable-size.patch
 31-increase_SQLITE_MAX_DEFAULT_PAGE_SIZE_to_32k.patch
 02-use-packaged-lempar.c.patch
+0001-Fix-a-parsing-issue-associated-with-a-corrupt-sqlite.patch
+0002-Better-error-message-text-when-the-schema-is-corrupt.patch

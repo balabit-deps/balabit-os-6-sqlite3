@@ -1,3 +1,15 @@
+sqlite3 (3.11.0-1ubuntu1.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Avoid segmentation fault while using a corrupted file.
+    - d/p/0001-Fix-a-parsing-issue-associated-with-a-corrupt-sqlite.patch:
+      Check if parser is busy before using it and raise an error if positive.
+      (LP: #1814869)
+    - d/p/0002-Better-error-message-text-when-the-schema-is-corrupt.patch:
+      Better message and additional checks.
+    - No CVE associated.
+
+ -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Thu, 21 Feb 2019 16:35:05 +0100
+
 sqlite3 (3.11.0-1ubuntu1) xenial; urgency=medium
 
   * debian/rules: compile SQLite with SQLITE_ENABLE_FTS3_TOKENIZER to re-enable
