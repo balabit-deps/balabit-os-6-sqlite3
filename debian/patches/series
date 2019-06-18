@@ -7,3 +7,16 @@
 02-use-packaged-lempar.c.patch
 0001-Fix-a-parsing-issue-associated-with-a-corrupt-sqlite.patch
 0002-Better-error-message-text-when-the-schema-is-corrupt.patch
+CVE-2016-6153-1.patch
+CVE-2016-6153-2.patch
+CVE-2016-6153-3.patch
+CVE-2017-10989.patch
+CVE-2017-13685.patch
+CVE-2017-2518.patch
+CVE-2017-2519.patch
+CVE-2017-2520.patch
+CVE-2018-20346-and-CVE-2018-20506.patch
+CVE-2019-8457.patch
+CVE-2019-9936.patch
+CVE-2019-9937.patch
+CVE-2019-8457-string-interface.patch

@@ -1,3 +1,59 @@
+sqlite3 (3.11.0-1ubuntu1.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2016-6153-*.patch: change temp direcotry
+      search algorithm in src/os_unix.c.
+    - CVE-2016-6153
+  * SECURITY UPDATE: heap-base buffer over-read
+    - debian/patches/CVE-2017-10989.patch: enhance RTree
+      module  in ext/rtree/rtree.c and added test in
+      ext/rtree/rtreeA.text.
+    - CVE-2017-10989
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-13685.patch: adds checks in
+      src/shell.c.
+    - CVE-2017-13685
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-2518.patch: prevent a use-after-free
+      in src/whereexpr.c.
+    - CVE-2017-2518
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-2519.patch: increase the size of
+      the reference count on table objects to 32bits in src/sqliteInt.h.
+    - CVE-2017-2519
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-2520.patch: add a check for pVal in
+      src/vdbemem.c
+    - CVE-2017-2520
+  * SECURITY UPDATE: Integer overflow
+    - debian/patches/CVE-2018-20346-and-CVE-2018-20506.patch:
+      add extra defenses against strategically corrupt databases
+      in ext/fts3/fst3.c, ext/fts3/fts3_write.c, test/fts3corrupt4.test,
+      test/permutations.test.
+    - CVE-2018-20346
+    - CVE-2018-20506
+  * SECURITY UPDATE: heap out-of-bound read
+    - debian/patches/CVE-2019-8457.patch: enhance the
+      rtreenode() in ext/rtree/rtree.c.
+    - debian/patches/CVE-2019-8457-string-interface.patch:
+      add string interface in src/btree.c, src/build.c,
+      src/func.c, src/mutex.c, src/pragma.c, src/printf.c,
+      src/sqlite.h.in, src/sqliteInt.h, src/treeview.c,
+      src/vdbeaux.c, src/vdbetrace.c, src/wherecode.c.
+    - CVE-2019-8457
+  * security update: heap-buffer over-read
+    - debian/patches/cve-2019-9936.patch: add checks
+      in code in order to fix in ext/fts5/fts5_hash.c,
+      ext/fts5/test/fts5aa.test.
+    - CVE-2019-9936
+  * security update: NULL pointer dereference
+    - debian/patches/cve-2019-9937.patch: fix in
+      ext/fts5/fts5Int.h, ext/fts5/fts5_hash.c, ext/fts5/fts5_index.c,
+      ext/fts5/test/fts5aa.test.
+    - CVE-2019-9937
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Tue, 18 Jun 2019 09:42:23 -0300
+
 sqlite3 (3.11.0-1ubuntu1.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Avoid segmentation fault while using a corrupted file.
